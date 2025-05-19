@@ -1,0 +1,133 @@
+---
+- # ====== List of Values: DERO_PATIENTS.NAME ==================
+  id: 43969247872553046973
+  identification: 
+    name: DERO_PATIENTS.NAME
+
+  subscription: 
+    version-number: 15624818767588
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: DERO_PATIENTS
+
+  column-mapping: 
+    return: PATIENT_ID
+    display: NAME
+    default-sort: NAME
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: DERO_DOCTORS.NAME ===================
+  id: 43969248574990046974
+  identification: 
+    name: DERO_DOCTORS.NAME
+
+  subscription: 
+    version-number: 15624818767675
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: DERO_DOCTORS
+
+  column-mapping: 
+    return: DOCTOR_ID
+    display: NAME
+    default-sort: NAME
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: DERO_STATUS =========================
+  id: 43971694652205851144
+  identification: 
+    name: DERO_STATUS
+
+  subscription: 
+    version-number: 15625404409747
+
+  source: 
+    location: Local Database
+    type: SQL Query
+    sql-query: |
+      SELECT 'Cash' AS display, 'Cash' AS return_value FROM dual
+      UNION ALL
+      SELECT 'Card', 'Card' FROM dual
+      UNION ALL
+      SELECT 'Insurance', 'Insurance' FROM dual
+
+  column-mapping: 
+    return: RETURN_VALUE
+    display: DISPLAY
+    default-sort: Use Order By from Query
+
+- # ====== List of Values: DERO_PAYTYPE ========================
+  id: 44079339922054761609
+  identification: 
+    name: DERO_PAYTYPE
+
+  subscription: 
+    version-number: 15625389363066
+
+  source: 
+    location: Local Database
+    type: SQL Query
+    sql-query: |
+      SELECT 'Cash' AS display, 'Cash' AS return_value FROM dual
+      UNION ALL
+      SELECT 'Card', 'Card' FROM dual
+      UNION ALL
+      SELECT 'Insurance', 'Insurance' FROM dual
+
+  column-mapping: 
+    return: RETURN_VALUE
+    display: DISPLAY
+    default-sort: Use Order By from Query
+
+- # ====== List of Values: DERO_GENDER =========================
+  id: 44804303703134242861
+  identification: 
+    name: DERO_GENDER
+
+  subscription: 
+    version-number: 15625174208009
+
+  source: 
+    location: Local Database
+    type: SQL Query
+    sql-query: |
+      SELECT 'Male' AS display, 'Male' AS return_value FROM dual
+      UNION ALL
+      SELECT 'Female', 'Female' FROM dual
+      
+
+  column-mapping: 
+    return: RETURN_VALUE
+    display: DISPLAY
+    default-sort: DISPLAY
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: DERO_PAYNAME ========================
+  id: 45197030811584285744
+  identification: 
+    name: DERO_PAYNAME
+
+  subscription: 
+    version-number: 15625393678565
+
+  source: 
+    location: Local Database
+    type: SQL Query
+    sql-query: |
+      SELECT 'Consultation' AS display, 'Consultation' AS return_value FROM dual
+      UNION ALL
+      SELECT 'Treatments', 'Treatments' FROM dual
+      UNION ALL
+      SELECT 'Drugs', 'Drugs' FROM dual
+
+  column-mapping: 
+    return: RETURN_VALUE
+    display: DISPLAY
+    default-sort: Use Order By from Query
+

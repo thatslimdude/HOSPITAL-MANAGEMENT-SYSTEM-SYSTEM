@@ -1,0 +1,677 @@
+---
+- # ====== List: Navigation Menu ===============================
+  id: 43963167414923909521
+  identification: 
+    name: Navigation Menu
+
+  subscription: 
+    version-number: 15625576783129
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: HOME =========================================
+    id: 43963179422589909548
+    label: 
+      label: HOME
+
+    icon: 
+      image/icon-css-classes: fa-home
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:1:&SESSION.::&DEBUG.::::'
+        page: 1 # Home
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: MANAGE PATIENTS ==============================
+    id: 43963490394130914554
+    label: 
+      label: MANAGE PATIENTS
+
+    icon: 
+      image/icon-css-classes: fa-edit
+
+    layout: 
+      sequence: 20
+      parent-entry: PATIENT FORM # 43963806113082643989
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 2
+      - 3
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:2:&SESSION.::&DEBUG.::::'
+        page: 2 # MANAGE PATIENTS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: PATIENT FORM =================================
+    id: 43963806113082643989
+    label: 
+      label: PATIENT FORM
+
+    icon: 
+      image/icon-css-classes: fa-user
+
+    layout: 
+      sequence: 30
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 4
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:4:&SESSION.::&DEBUG.::::'
+        page: 4 # PATIENT FORM
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: LIST OF PATIENTS =============================
+    id: 43964177321873653160
+    label: 
+      label: LIST OF PATIENTS
+
+    icon: 
+      image/icon-css-classes: fa-bars
+
+    layout: 
+      sequence: 40
+      parent-entry: PATIENT FORM # 43963806113082643989
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 5
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:5:&SESSION.::&DEBUG.::::'
+        page: 5 # LIST OF PATIENTS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: MANAGE DOCTORS ===============================
+    id: 43965807876650943864
+    label: 
+      label: MANAGE DOCTORS
+
+    icon: 
+      image/icon-css-classes: fa-edit
+
+    layout: 
+      sequence: 50
+      parent-entry: DOCTOR FORM # 43966268670342961638
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 7
+      - 8
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:7:&SESSION.::&DEBUG.::::'
+        page: 7 # MANAGE DOCTORS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: DOCTOR FORM ==================================
+    id: 43966268670342961638
+    label: 
+      label: DOCTOR FORM
+
+    icon: 
+      image/icon-css-classes: fa-user-clock
+
+    layout: 
+      sequence: 60
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:10:&SESSION.::&DEBUG.::::'
+        page: 10 # DOCTOR FORM
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: LIST OF DOCTORS ==============================
+    id: 43966381766997968740
+    label: 
+      label: LIST OF DOCTORS
+
+    icon: 
+      image/icon-css-classes: fa-bars
+
+    layout: 
+      sequence: 70
+      parent-entry: DOCTOR FORM # 43966268670342961638
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 11
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:11:&SESSION.::&DEBUG.::::'
+        page: 11 # LIST OF DOCTORS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: APPOINTMENTS =================================
+    id: 43969245606832046763
+    label: 
+      label: APPOINTMENTS
+
+    icon: 
+      image/icon-css-classes: fa-calendar-o
+
+    layout: 
+      sequence: 80
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 15
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:15:&SESSION.::&DEBUG.::::'
+        page: 15 # APPOINTMENTS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: LIST OF APPOINTMENTS =========================
+    id: 44009697155757691255
+    label: 
+      label: LIST OF APPOINTMENTS
+
+    icon: 
+      image/icon-css-classes: fa-bars
+
+    layout: 
+      sequence: 100
+      parent-entry: APPOINTMENTS # 43969245606832046763
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 20
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:20:&SESSION.::&DEBUG.::::'
+        page: 20 # LIST OF APPOINTMENTS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: ADD PRESCRIPTION =============================
+    id: 44016759539224820827
+    label: 
+      label: ADD PRESCRIPTION
+
+    icon: 
+      image/icon-css-classes: fa-file-plus
+
+    layout: 
+      sequence: 110
+      parent-entry: PRESCRIPTIONS # 44018551635153561969
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 22
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:22:&SESSION.::&DEBUG.::::'
+        page: 22 # PRESCRIPTION FORM
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: PRESCRIPTIONS ================================
+    id: 44018551635153561969
+    label: 
+      label: PRESCRIPTIONS
+
+    icon: 
+      image/icon-css-classes: fa-bars
+
+    layout: 
+      sequence: 120
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 23
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:23:&SESSION.::&DEBUG.::::'
+        page: 23 # LIST OF PRESCRIPTIONS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: PAYMENTS =====================================
+    id: 45186881127043828823
+    label: 
+      label: PAYMENTS
+
+    icon: 
+      image/icon-css-classes: fa-piggy-bank
+
+    layout: 
+      sequence: 130
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 14
+      - 16
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:14:&SESSION.::&DEBUG.::::'
+        page: 14 # PAYMENTS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: LIST OF PAYMENTS =============================
+    id: 45192645842545939768
+    label: 
+      label: LIST OF PAYMENTS
+
+    icon: 
+      image/icon-css-classes: fa-bars
+
+    layout: 
+      sequence: 140
+      parent-entry: PAYMENTS # 45186881127043828823
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 17
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:17:&SESSION.::&DEBUG.::::'
+        page: 17 # LIST OF PAYMENTS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: PAYMENT SUMMARY ==============================
+    id: 45205044028746114868
+    label: 
+      label: PAYMENT SUMMARY
+
+    icon: 
+      image/icon-css-classes: fa-clipboard
+
+    layout: 
+      sequence: 150
+      parent-entry: PAYMENTS # 45186881127043828823
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 21
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:21:&SESSION.::&DEBUG.::::'
+        page: 21 # PAYMENT SUMMARY
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: UPCOMING APPOINTMENTS ========================
+    id: 45231943096776673769
+    label: 
+      label: UPCOMING APPOINTMENTS
+
+    icon: 
+      image/icon-css-classes: fa-angle-down
+
+    layout: 
+      sequence: 160
+      parent-entry: LIST OF APPOINTMENTS # 44009697155757691255
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 25
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:25:&SESSION.::&DEBUG.::::'
+        page: 25 # UPCOMING APPOINTMENTS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: DASHBOARD ====================================
+    id: 45612396914448237204
+    label: 
+      label: DASHBOARD
+
+    icon: 
+      image/icon-css-classes: fa-ellipsis-v-o
+
+    layout: 
+      sequence: 170
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:30:&SESSION.::&DEBUG.::::'
+        page: 30 # Dashboard
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+- # ====== List: Navigation Bar ================================
+  id: 43963168648194909524
+  identification: 
+    name: Navigation Bar
+
+  subscription: 
+    version-number: 15624814729163
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: &APP_USER. ===================================
+    id: 43963181249665909553
+    label: 
+      label: '&APP_USER.'
+
+    icon: 
+      image/icon-css-classes: fa-user
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '#'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+      2.: has-username
+
+  - # ====== Entry: --- ==========================================
+    id: 43963181733287909554
+    label: 
+      label: '---'
+
+    layout: 
+      sequence: 20
+      parent-entry: '&APP_USER.' # 43963181249665909553
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: separator
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+
+  - # ====== Entry: Sign Out =====================================
+    id: 43963182155590909554
+    label: 
+      label: Sign Out
+
+    icon: 
+      image/icon-css-classes: fa-sign-out
+
+    layout: 
+      sequence: 30
+      parent-entry: '&APP_USER.' # 43963181249665909553
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '&LOGOUT_URL.'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+
+- # ====== List: Page Director =================================
+  id: 45624409708068686965
+  identification: 
+    name: Page Director
+
+  subscription: 
+    version-number: 15625582019340
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: PATIENT MODULE ===============================
+    id: 45624410139023686967
+    label: 
+      label: PATIENT MODULE
+
+    icon: 
+      image/icon-css-classes: menu/user_green_64.gif
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:4:&SESSION.::&DEBUG.::::'
+        page: 4 # PATIENT FORM
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: DOCTOR MODULE ================================
+    id: 45624410646495686967
+    label: 
+      label: DOCTOR MODULE
+
+    icon: 
+      image/icon-css-classes: menu/user_red_64.gif
+
+    layout: 
+      sequence: 20
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:10:&SESSION.::&DEBUG.::::'
+        page: 10 # DOCTOR FORM
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: APPOINTMENT MODULE ===========================
+    id: 45624411028567686968
+    label: 
+      label: APPOINTMENT MODULE
+
+    icon: 
+      image/icon-css-classes: menu/calendar_64.gif
+
+    layout: 
+      sequence: 30
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:15:&SESSION.::&DEBUG.::::'
+        page: 15 # APPOINTMENTS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: PRESCRIPTION MODULE ==========================
+    id: 45624411475991686968
+    label: 
+      label: PRESCRIPTION MODULE
+
+    icon: 
+      image/icon-css-classes: menu/edit_64.gif
+
+    layout: 
+      sequence: 40
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:23:&SESSION.::&DEBUG.::::'
+        page: 23 # LIST OF PRESCRIPTIONS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: PAYMENT MODULE ===============================
+    id: 45624411823815686968
+    label: 
+      label: PAYMENT MODULE
+
+    icon: 
+      image/icon-css-classes: menu/chart_bar_64.gif
+
+    layout: 
+      sequence: 50
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:14:&SESSION.::&DEBUG.::::'
+        page: 14 # PAYMENTS
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
